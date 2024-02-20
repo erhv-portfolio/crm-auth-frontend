@@ -10,8 +10,7 @@ export class LayoutPageComponent {
   public sidebarItems = [
     { label: 'Dashboard', icon: 'home', url: '/dashboard' },
     { label: 'listado', icon: 'label', url: './list' },
-    { label: 'Añadir', icon: 'add', url: './new-hero' },
-    { label: 'Buscar', icon: 'search', url: './search' }
+    { label: 'Añadir', icon: 'add', url: './new-hero' }
 
   ];
 
@@ -20,7 +19,6 @@ export class LayoutPageComponent {
   public user = computed( () => this.authService.currentUser());
 
   onLogout() {
-    console.log('LAYOUT PROSPECTOS - cerrando sesion...');
     this.authService.logout();
   }
 
