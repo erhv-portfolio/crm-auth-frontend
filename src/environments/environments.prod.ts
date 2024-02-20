@@ -1,3 +1,3 @@
 export const environments = {
-  baseUrl:  'http://localhost:4000/api'
+  baseUrl:  'https://crm-auth-backend.onrender.com/api'
 }
