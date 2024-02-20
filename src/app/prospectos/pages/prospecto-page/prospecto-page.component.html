@@ -1,0 +1,50 @@
+<ng-template #divLoading>
+  <mat-grid-list cols="1">
+    <mat-grid-tile>
+      <mat-spinner></mat-spinner>
+    </mat-grid-tile>
+  </mat-grid-list>
+</ng-template>
+
+
+<div *ngIf="prospecto; else divLoading" class="grid p-2">
+
+  <mat-card class="col-12 sm:col-6">
+    <img [src]="prospecto | prospectoImage" [alt]="prospecto.nombre" mat-card-image>
+    <!--<img mat-card-image src="assets/no-image.png" [alt]="prospecto.nombre">-->
+  </mat-card>
+
+  <mat-card class="col-12 sm:col-6">
+    <mat-card-header>
+      <mat-card-title>Nombre:</mat-card-title>
+      <mat-card-subtitle>{{ prospecto.nombre }} {{ prospecto.primer_apellido }} {{ prospecto.segundo_apellido }}</mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-header>
+      <mat-card-title>Estatus</mat-card-title>
+      <mat-card-subtitle>{{ prospecto.estatus }}</mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content>
+      <mat-list>
+        <mat-list-item><strong>Telefono:</strong> {{ prospecto.telefono }}</mat-list-item>
+        <mat-list-item><strong>Colonia:</strong> {{ prospecto.colonia }}</mat-list-item>
+        <mat-list-item><strong>Código Postal</strong> {{ prospecto.codigo_postal }}</mat-list-item>
+        <mat-list-item><strong>RFC:</strong> {{ prospecto.rfc }}</mat-list-item>
+      </mat-list>
+
+      <button
+        mat-button
+        mat-flat-button
+        color="warn"
+        (click)="goBack()"
+      >
+        Regresar
+      </button>
+    </mat-card-content>
+  </mat-card>
+
+
+
+
+</div>

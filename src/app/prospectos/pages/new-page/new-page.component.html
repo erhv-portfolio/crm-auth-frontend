@@ -1,0 +1,170 @@
+<h1>
+  {{ currentProspecto._id ? 'Editar' : 'Agregar' }}
+  prospecto
+</h1>
+
+<mat-divider class="mb-2"></mat-divider>
+
+<div class="grid">
+
+  <div class="col-12 sm:col-6">
+    <mat-card>
+      <mat-card-content>
+        <form class="grid" [formGroup]="prospectoForm" (ngSubmit)="onSubmit()">
+
+          <mat-form-field class="col-12 sm:col-4">
+            <mat-label>Nombre</mat-label>
+            <input
+              matInput
+              type="text"
+              required
+              formControlName="nombre"
+            />
+          </mat-form-field>
+
+          <mat-form-field class="col-12 sm:col-4">
+            <mat-label>Primer Apellido</mat-label>
+            <input
+              matInput
+              type="text"
+              required
+              formControlName="primer_apellido"
+            />
+          </mat-form-field>
+
+          <mat-form-field class="col-12 sm:col-4">
+            <mat-label>Segundo Apellido</mat-label>
+            <input
+              matInput
+              type="text"
+              required
+              formControlName="segundo_apellido"
+            />
+          </mat-form-field>
+
+          <mat-form-field class="col-12 sm:col-6">
+            <mat-label>Télefono</mat-label>
+            <input
+              matInput
+              type="text"
+              formControlName="telefono"
+            />
+          </mat-form-field>
+
+          <mat-form-field class="col-12 sm:col-6">
+            <mat-label>RFC</mat-label>
+            <input
+              matInput
+              type="text"
+              formControlName="rfc"
+            />
+          </mat-form-field>
+
+          <mat-form-field class="col-12">
+            <mat-label>Estatus</mat-label>
+            <mat-select
+              required
+              formControlName="estatus"
+            >
+              <mat-option
+                *ngFor="let estatus of estatus"
+                [value]="estatus.id"
+                >
+                {{ estatus.desc }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+
+
+          <mat-form-field class="col-12 sm:col-6">
+            <mat-label>Calle</mat-label>
+            <input
+              matInput
+              type="text"
+              formControlName="calle"
+            />
+          </mat-form-field>
+
+          <mat-form-field class="col-12 sm:col-6">
+            <mat-label>Número</mat-label>
+            <input
+              matInput
+              type="text"
+              formControlName="numero"
+            />
+          </mat-form-field>
+
+          <mat-form-field class="col-12 sm:col-6">
+            <mat-label>Colonia</mat-label>
+            <input
+              matInput
+              type="text"
+              formControlName="colonia"
+            />
+          </mat-form-field>
+
+          <mat-form-field class="col-12 sm:col-6">
+            <mat-label>Código Postal</mat-label>
+            <input
+              matInput
+              type="text"
+              formControlName="codigo_postal"
+            />
+          </mat-form-field>
+
+          <mat-form-field class="col-12">
+            <mat-label>Imágen</mat-label>
+            <mat-select
+              formControlName="alt_img"
+            >
+              <mat-option
+                *ngFor="let imagen of imagenes"
+                [value]="imagen.url"
+                >
+                {{ imagen.id }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+
+        </form>
+
+        <div class="flex justify-content-between">
+          <button
+            (click)="onDeleteProspecto()"
+            *ngIf="currentProspecto._id"
+            mat-flat-button
+              color="warn"
+          >
+            Borrar
+          </button>
+
+          <button
+            (click)="goBack()"
+            mat-button
+              color="primary"
+          >
+            Regresar
+          </button>
+
+          <button
+            mat-flat-button
+              color="primary"
+              (click)="onSubmit()"
+          >
+            <mat-icon>save</mat-icon>
+            Guardar
+          </button>
+        </div>
+
+
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+  <div class="col-12 sm:col-6">
+    <mat-card>
+      <img [src]="currentProspecto | prospectoImage" alt="imagen del heroe" mat-card-image>
+    </mat-card>
+  </div>
+
+</div>

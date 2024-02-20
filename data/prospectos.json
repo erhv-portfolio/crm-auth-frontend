@@ -1,0 +1,136 @@
+{
+  "prospectos": [
+    {
+      "nombre": "Eduardo Rey",
+      "primer_apellido": "Heredia",
+      "segundo_apellido": "Velázquez",
+      "calle": "Santa Serena",
+      "numero": 1277,
+      "colonia": "Cumbre Real",
+      "codigo_postal": 80290,
+      "telefono": "6672261040",
+      "rfc": "HEVE740318",
+      "estatus": "Autorizado"
+    },
+    {
+      "nombre": "Juan",
+      "primer_apellido": "Pérez",
+      "segundo_apellido": "Gómez",
+      "calle": "Calle Principal",
+      "numero": 123,
+      "colonia": "Centro",
+      "codigo_postal": 12345,
+      "telefono": "123-456-7890",
+      "rfc": "ABC123456XYZ",
+      "estatus": "Enviado"
+    },
+    {
+      "nombre": "María",
+      "primer_apellido": "López",
+      "segundo_apellido": "García",
+      "calle": "Calle Secundaria",
+      "numero": 456,
+      "colonia": "Oeste",
+      "codigo_postal": 54321,
+      "telefono": "987-654-3210",
+      "rfc": "DEF789012XYZ",
+      "estatus": "Autorizado"
+    },
+    {
+      "nombre": "Carlos",
+      "primer_apellido": "Martínez",
+      "segundo_apellido": "González",
+      "calle": "Avenida Principal",
+      "numero": 789,
+      "colonia": "Norte",
+      "codigo_postal": 67890,
+      "telefono": "456-789-0123",
+      "rfc": "GHI567890XYZ",
+      "estatus": "Rechazado"
+    },
+    {
+      "nombre": "Laura",
+      "primer_apellido": "Gutiérrez",
+      "segundo_apellido": "Hernández",
+      "calle": "Calle Central",
+      "numero": 101,
+      "colonia": "Sur",
+      "codigo_postal": 54321,
+      "telefono": "789-012-3456",
+      "rfc": "JKL123456XYZ",
+      "estatus": "Enviado"
+    },
+    {
+      "nombre": "Pedro",
+      "primer_apellido": "Rodríguez",
+      "segundo_apellido": "Sánchez",
+      "calle": "Avenida Secundaria",
+      "numero": 222,
+      "colonia": "Este",
+      "codigo_postal": 98765,
+      "telefono": "012-345-6789",
+      "rfc": "MNO987654XYZ",
+      "estatus": "Autorizado"
+    },
+    {
+      "nombre": "Ana",
+      "primer_apellido": "Herrera",
+      "segundo_apellido": "Ramírez",
+      "calle": "Calle Norte",
+      "numero": 333,
+      "colonia": "Oriente",
+      "codigo_postal": 11111,
+      "telefono": "234-567-8901",
+      "rfc": "PQR111222XYZ",
+      "estatus": "Rechazado"
+    },
+    {
+      "nombre": "Roberto",
+      "primer_apellido": "Soto",
+      "segundo_apellido": "Juárez",
+      "calle": "Calle Sur",
+      "numero": 444,
+      "colonia": "Poniente",
+      "codigo_postal": 22222,
+      "telefono": "345-678-9012",
+      "rfc": "STU333444XYZ",
+      "estatus": "Enviado"
+    },
+    {
+      "nombre": "Isabel",
+      "primer_apellido": "Pacheco",
+      "segundo_apellido": "Mendoza",
+      "calle": "Avenida Poniente",
+      "numero": 555,
+      "colonia": "Centro",
+      "codigo_postal": 33333,
+      "telefono": "456-789-0123",
+      "rfc": "VWX555666XYZ",
+      "estatus": "Autorizado"
+    },
+    {
+      "nombre": "Daniel",
+      "primer_apellido": "Ortega",
+      "segundo_apellido": "Cruz",
+      "calle": "Calle Este",
+      "numero": 666,
+      "colonia": "Occidente",
+      "codigo_postal": 44444,
+      "telefono": "567-890-1234",
+      "rfc": "YZA999000XYZ",
+      "estatus": "Rechazado"
+    },
+    {
+      "nombre": "Sofía",
+      "primer_apellido": "Torres",
+      "segundo_apellido": "Lara",
+      "calle": "Avenida Oeste",
+      "numero": 777,
+      "colonia": "Norte",
+      "codigo_postal": 55555,
+      "telefono": "678-901-2345",
+      "rfc": "BCD777888XYZ",
+      "estatus": "Enviado"
+    }
+  ]
+}
